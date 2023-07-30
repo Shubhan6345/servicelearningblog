@@ -21,7 +21,7 @@
 
     <nav class="nav">
         <ul class="nav-area">
-        <li><a href="#">Home</a></li>
+        <li><a href="">Home</a></li>
         <li><a href="/Web/ServiceLearningOurWork/about.html">Our Work</a></li>
         </ul>
 </nav>
@@ -91,10 +91,15 @@
           </div>
 
           <script>
-            function redirectToLinks() {
-              const links = document.querySelectorAll(".btn a");
-              for (const link of links) {
-                window.open(link.href, "_blank");
+            const btn = document.querySelector(".btn");
+            btn.addEventListener("click", redirectToLinks);
+            btn.addEventListener("touchend", redirectToLinks);
+        
+            function redirectToLinks(event) {
+              const target = event.target;
+              if (target.tagName === "A") {
+                event.preventDefault();
+                window.open(target.href, "_blank");
               }
             }
           </script>
