@@ -10,19 +10,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">   
-    <link rel="apple-touch-icon" sizes="180x180" href="/Web/servicelearning/Pics/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/Web/servicelearning/Pics/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/Web/servicelearning/Pics/favicon-16x16.png">
-    <link rel="manifest" href="/Web/servicelearning/Pics/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="Pics/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Pics/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Pics/favicon-16x16.png">
+    <link rel="manifest" href="Pics/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head> 
 
 <body>
+
+    <nav class="nav">
+        <ul class="nav-area">
+        <li><a href="#">Home</a></li>
+        <li><a href="/Web/ServiceLearningOurWork/about.html">Our Work</a></li>
+        </ul>
+</nav>
+
     <section id="blog"> 
 
         <div class="blog-heading">
             <h3>Blogspoint</h3> <br>
-            <span> <b>By: Scam Stoppers</b></span>
+            <span> <b>By: Stop_A_Scam</b></span>
         </div>
 
         <div class="blog-container">
@@ -81,6 +89,15 @@
               <a href="https://www.instagram.com/stop_a_scam/"><i class="fa fa-instagram"></i></a>
             </div>
           </div>
+
+          <script>
+            function redirectToLinks() {
+              const links = document.querySelectorAll(".btn a");
+              for (const link of links) {
+                window.open(link.href, "_blank");
+              }
+            }
+          </script>
 
     </section>
     
